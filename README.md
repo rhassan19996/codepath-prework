@@ -34,7 +34,7 @@ Settings Page- Settings page with push implementation that changes app to dark m
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/b1LqpPd.gif' title='PreWork Tip Calculator Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/QmNFlLJ.gif' title='PreWork Tip Calculator Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 
