@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         let bill = Double(billAmountTextField.text!) ?? 0
         
         //get total tip by multiplying tip * tipPercentage
-        let tipPercentages = [0.15, 0.18, 2.0]
+        let tipPercentages = [0.15, 0.18, 0.2]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
         //Update tip amount label
@@ -35,11 +35,17 @@ class ViewController: UIViewController {
         //Update total amount
         totalLabel.text = String(format: "$%.2f", total)
         
-      func buttonPressed(sender: UIButton){
-            let totalBillAmount = total / 2
+      
+   
+    }
+    @IBAction func splitBillPressed(sender:UIButton){
+        let bill = Double(billAmountTextField.text!) ?? 0
+
+        let tipPercentages = [0.15, 0.18, 2.0]
+        let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
+        let total = bill + tip
+        let totalBillAmount = total / 2
           splitBillTotal.text = String(format: "$%.2f", totalBillAmount)
         }
-    }
-
 }
 
