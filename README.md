@@ -6,7 +6,7 @@ codework prework tip calculator project
 
 Submitted by: **Md Hassan**
 
-Time spent: **8** hours spent in total
+Time spent: **13** hours spent in total
 
 ## User Stories
 
@@ -24,13 +24,14 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [x] List anything else that you can get done to improve the app functionality!
+Split Bill- This will split the bill betwen two people by a simple button click.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://imgur.com/gallery/b1LqpPd' title='PreWork Tip Calculator Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -40,7 +41,7 @@ While building the app i tried implementing the slider UI but I was unable to li
 
 ## License
 
-    Copyright [2022] [name of copyright owner]
+    Copyright [2022] [Md Hassan]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
