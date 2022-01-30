@@ -25,6 +25,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] List anything else that you can get done to improve the app functionality!
+
 Split Bill- This will split the bill betwen two people by a simple button click.
 Settings Page- Settings page with push implementation that changes app to dark mode(working on dark mode implementation)
 
