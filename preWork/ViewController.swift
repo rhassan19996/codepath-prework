@@ -13,9 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var totalLabel: UILabel!
     
+    @IBOutlet weak var splitBillTotal: UILabel!
+    @IBOutlet weak var splitBill: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     @IBAction func calculateTip(sender:Any){
         
@@ -26,12 +29,16 @@ class ViewController: UIViewController {
         let tipPercentages = [0.15, 0.18, 2.0]
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
-        
         //Update tip amount label
         tipAmountLabel.text = String(format: "$%.2f", tip)
         
         //Update total amount
         totalLabel.text = String(format: "$%.2f", total)
+        
+      func buttonPressed(sender: UIButton){
+            let totalBillAmount = total / 2
+          splitBillTotal.text = String(format: "$%.2f", totalBillAmount)
+        }
     }
 
 }

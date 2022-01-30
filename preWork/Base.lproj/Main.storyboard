@@ -69,15 +69,34 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbW-yT-Mpd">
+                                <rect key="frame" x="275" y="531" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mba-KM-sRd">
+                                <rect key="frame" x="43" y="531" width="53" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Split"/>
+                                <connections>
+                                    <action selector="calculateTipWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L46-cB-jJ2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="billAmountTextField" destination="WYw-z7-4ml" id="km9-Qi-gzS"/>
+                        <outlet property="splitBill" destination="Mba-KM-sRd" id="vMW-Zh-p6D"/>
+                        <outlet property="splitBillTotal" destination="xbW-yT-Mpd" id="YbF-fT-hbe"/>
                         <outlet property="tipAmountLabel" destination="w9h-LK-MQ2" id="JhD-7c-FCg"/>
                         <outlet property="tipControl" destination="MPd-Qb-iff" id="QdA-dH-2cU"/>
                         <outlet property="totalLabel" destination="HAW-7e-x7F" id="iWw-Uy-sl8"/>
+                        <outlet property="view" destination="Mba-KM-sRd" id="OxE-4e-2fg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
